@@ -3,6 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      console.log(axios);
+      axios.get('http://localhost:3000/donuts')
+      .then(res => {
+        console.log(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+    </script>
   </head>
   <body>
 
